@@ -10,7 +10,7 @@
 // Database Details
 	$database['host'] 		= 'localhost'; // Database host
 	$database['user'] 		= 'root'; // Username for connection.
-	$database['pass'] 		= 'r3fr4n3...'; // Password for Database
+	$database['pass'] 		= ''; // Password for Database
 	$database['db'] 		= 'mfb_old'; // Database itself.
 
 ?>
