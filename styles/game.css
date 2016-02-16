@@ -1,0 +1,513 @@
+/* Page Wide CSS */
+body{
+margin: 0;
+padding: 0;
+border: 0;
+font: normal 10px Tahoma;
+background: #111111; 
+overflow: hidden;
+}
+
+#left{
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 200px; /*Width of left frame div*/
+height: 98%;
+overflow: auto; /*Disable scrollbars. Set to "scroll" to enable*/
+background: #000000;
+font: normal 11px Verdana, sans-serif;
+color: #FFFFFF;
+border-right: 1px solid #222222;
+padding-top: 15px;
+}
+
+#top{
+position: absolute; 
+top: 0; 
+left: 201px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0;
+height: 50px; /*Height of top frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+text-align: center;
+background: #111111;
+font: normal 10px Verdana, sans-serif;
+color: #FFFFFF;
+padding-top: 3px;
+padding-left: 3px;
+padding-right: 3px;
+border-left: 1px solid #000000;
+}
+
+#bottom{
+position: absolute; 
+top: auto; 
+left: 201px; /*Set left value to WidthOfLeftFrameDiv*/
+bottom: 0;
+right: 0;
+height: 20px; /*Height of bottom frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+text-align: center;
+background: #111111;
+margin-top: 3px;
+font: normal 10px Verdana, sans-serif;
+color: #FFFFFF;
+border-left: 1px solid #000000;
+}
+
+#content{
+position: fixed; 
+top: 50px; /*Set top value to HeightOfTopFrameDiv*/
+left: 201px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0;
+bottom: 20px; /*Set bottom value to HeightOfBottomFrameDiv*/
+overflow: auto; 
+background: #111111;
+font: normal 11px Verdana, sans-serif;
+color: #FFFFFF;
+border-left: 1px solid #000000;
+}
+
+* html body{ /*IE6 hack*/
+padding: 50px 0 20px 180px; /*Set value to (HeightOfTopFrameDiv  0 HeightOfBottomFrameDiv WidthOfLeftFrameDiv)*/
+}
+
+* html #content{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+* html #top, * html #bottom{ /*IE6 hack*/
+width: 100%;
+}
+
+/* Use this for all of the Heading Titles (Eg. Welcome to MFB etc...) */
+.heading {
+font: normal 10pt Verdana, sans-serif;
+text-align: center; 
+border-top: 1px solid #990000; 
+background: url('../images/ttitle.png') #000000; 
+border-bottom: 1px solid #990000; 
+padding-bottom: 5px;
+font-weight: bold;
+padding-top: 5px;
+}
+
+/* Status Bar Stuff */
+#statusbar {
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0;
+	border-collapse:collapse
+	background: #000000;
+}
+
+/* Find a Player Table Layout & Form Layout */
+#find {
+width: 100%;
+text-align: center;
+}
+
+#find input, #find button {
+background: #000000;
+border: 1px solid #880000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#find input:hover, #find button:hover {
+background: #000000;
+border: 1px solid #FF0000;
+color: #FFFFFF;
+}
+
+#find input:focus, #find button:focus {
+background: #000000;
+border: 1px solid #FFFFFF;
+color: #880000;
+}
+
+#find a:link, #find a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+
+#find a:hover, #find a:active {
+color: #FF0000;
+}
+
+#find td {
+background: #000000;
+border-top: 1px solid #880000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-right: 3px;
+}
+
+/* Updates Stuff */
+#updates {
+width: 800px;
+font: normal 11px Tahoma;
+padding: 5px;
+padding-top: 10px;
+background: #000000;
+border: 1px solid #880000;
+text-align: left;
+margin: auto;
+}
+.updates {
+font: normal 11px tahoma; 
+color: #ffffff; 
+padding-left: 15px; 
+text-align: left; 
+padding-bottom: 5px;
+}
+.ups_bottom {
+font: normal 11px tahoma, sans-serif; 
+text-align: right; 
+padding-bottom: 10px; 
+border-top: 1px dotted white; 
+padding-top: 5px; 
+color: #ffffff
+}
+#updates input, #updates button, #updates textarea {
+background: #000000;
+border: 1px solid #880000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#updates input:hover, #updates button:hover, #updates textarea:hover {
+background: #000000;
+border: 1px solid #FF0000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#updates input:focus, #updates button:focus, #updates textarea:focus {
+background: #000000;
+border: 1px solid #FFFFFF;
+color: #880000;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#updates label,input,submit {
+	display: block;
+	width: 150px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#updates textarea {
+	margin-bottom: 5px;
+}
+
+#updates label {
+	text-align: right;
+	width: 75px;
+	font-weight: bold;
+	padding-right: 20px;
+}
+#updates br {
+	clear: left;
+}
+#updates a:link, #updates a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+
+#updates a:hover, #updates a:active {
+color: #FF0000;
+}
+.utitle {
+	border-bottom: 1px solid #880000;
+	border-top: 1px solid #880000; 
+	text-transform: uppercase;
+	font: bold 10pt Verdana, sans-serif;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-bottom: 5px;
+	}
+
+/*Main Menu (Left Bar) */
+#menu{
+border: 0px solid #111111;
+background-color: #000000;
+border-bottom-width: 0;
+width: 100%;
+}
+
+* html #menu{ /*IE only rule. Original menu width minus all left/right paddings */
+width: 100%;
+}
+
+#menu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+#menu a{
+font: normal 10px Verdana;
+padding: 4px 3px;
+display: block;
+outline: none;
+width: 100%; /*Define width for IE6's sake*/
+color: #ffffff;
+padding-left: 6px;
+text-decoration: none;
+border-bottom: 0px solid #C0C0C0;
+}
+#menu a:visited{
+color: #999999;
+}
+
+html>body #menu a{ /*Non IE rule*/
+width: auto;
+}
+
+#menu a:hover{
+background-color: #220000;
+color: #ffffff;
+text-decoration: none;
+}
+
+.navtitle {
+	text-align: center; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	margin-bottom: 0px;
+	margin-top: 2px;
+	border-bottom: 1px solid #880000;
+	padding-bottom: 3px;
+}
+
+.maintitle {
+background-color: #000000;
+border-top: 1px solid #880000;
+border-bottom: 1px solid #880000;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+#profile td {
+	background-color: #000000;
+	border: 1px solid #880000;
+	border-bottom: 0px;
+	border-left: 0px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+}
+#profile a:link, #profile a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+
+#profile a:hover, #profile a:active {
+color: #FF0000;
+}
+#profile input, #profile button, #profile textarea {
+background: #000000;
+border: 1px solid #880000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#profile input:hover, #profile button:hover, #profile textarea:hover {
+background: #000000;
+border: 1px solid #FF0000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#profile input:focus, #profile button:focus, #profile textarea:focus {
+background: #000000;
+border: 1px solid #FFFFFF;
+color: #880000;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#profile ul {
+	margin: 0 10px;
+	width: 60%;
+}
+#profile ol {
+	margin: 0 10px;
+	width: 60%;
+}
+#profile li {
+	padding: 0;
+	margin: 0;
+	line-height: 100%;
+}
+.thead {
+	background: url('../images/thead.png');
+}
+#online td {
+	background-color: #000000;
+	border: 1px solid #880000;
+	border-bottom: 0px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+}
+#online a:link, #online a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+
+#online a:hover, #online a:active {
+color: #FF0000;
+}
+/* User Access Colours */
+.dev {
+	color: #990000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.adm {
+	color: #990099;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.gmod {
+	color: #CCCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.fmod {
+	color: #00CCCC;
+	font-weight: bold;
+}
+.mod {
+	color: #00CCCC;
+	font-style: oblique;
+}
+.news {
+	color: #00CC00;
+	text-decoration: italic;
+}
+.user {
+	color: #FFFFFF;
+}
+.friend {
+	color: #888888;
+}
+#quote {
+	background: url(../images/quote.png) #000000;
+	background-position: top left;
+	background-repeat: no-repeat;
+	border: 1px solid #880000;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	font: normal 11px Georgia;
+	font-style: oblique;
+	color: #FFFFFF;
+	width: 65%;
+/*	max-height: 150px;*/
+	text-align: left;
+	overflow: auto;
+}
+#mailbox {
+	margin: 0 auto;
+	}
+#mailbox td {
+	background-color: #000000;
+	border: 1px solid #880000;
+	border-left: 0px;
+	border-bottom: 0px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+}
+#mailbox a:link, #mailbox a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+
+#mailbox a:hover, #mailbox a:active {
+color: #FF0000;
+}
+#mbleft {
+	float: left;
+	border: 1px solid #88000;
+	}
+#mailbox input, #mailbox button, #mailbox textarea {
+background: #000000;
+border: 1px solid #880000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#mailbox input:hover, #mailbox button:hover, #mailbox textarea:hover {
+background: #000000;
+border: 1px solid #FF0000;
+color: #FFFFFF;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+#mailbox input:focus, #mailbox button:focus, #mailbox textarea:focus {
+background: #000000;
+border: 1px solid #FFFFFF;
+color: #880000;
+padding-left: 3px;
+padding-right: 3px;
+}
+#mbleft ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+#mfbleft {
+	margin-left: 15px;
+	}
+#mbleft a{
+font: normal 10px Verdana;
+padding: 4px 3px;
+display: block;
+outline: none;
+width: 100%; /*Define width for IE6's sake*/
+color: #ffffff;
+padding-left: 6px;
+text-decoration: none;
+border-bottom: 0px solid #C0C0C0;
+}
+#mbleft a:visited{
+color: #999999;
+}
+
+html>body #mbleft a{ /*Non IE rule*/
+width: auto;
+}
+
+#mbleft a:hover{
+background-color: #220000;
+color: #ffffff;
+text-decoration: none;
+}
