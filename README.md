@@ -1,6 +1,4 @@
-# mfb-old
-Welcome to Money for Blood.
-===========================
+# Welcome to Money for Blood.
 
 Money for Blood (MFB) is a text turn & time based Massively Multiplayer Online Role Playing Game
 which you play in your browser. 
